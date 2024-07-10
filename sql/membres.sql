@@ -44,7 +44,8 @@ CREATE TABLE IF NOT EXISTS `personne` (
 --
 
 INSERT INTO `personne` (`id`, `nom`, `prenom`, `user`, `password`, `email`, `date`) VALUES
-(2, 'TOTO', 'Tata', 'tata', 'toto', 'tata@tata.com', '2024-04-01'),
+(3, 'TOTO2', 'Tata', 'tata', 'toto', 'tata@tata.com', '2024-04-01'),
+  (2, 'TOTO', 'Tata', 'tata', 'toto', 'tata@tata.com', '2024-04-01'),
 (1, 'TOTO', 'Toto', 'toto', 'toto', 'toto@toto.com', '2024-04-01');
 COMMIT;
 

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="MonPremierJob" default="default">
+	
+	
+	
+    <!-- ============================================  -->
+    <!-- Target: prepare                               -->
+    <!-- ============================================  -->
+    <target name="prepare">
+        <echo>Making directory ./build</echo>
+        <mkdir dir="./build" />
+    </target>
+
+    <!-- ============================================  -->
+    <!-- Target: build                                 -->
+    <!-- ============================================  -->
+    <target name="build" depends="prepare">
+        <echo>Testing ...</echo>       
+    </target>
+
+
+	<target name="phpunit" depends="build">
+	<property file="TestStack.php" />
+		<echo>Rapports dans phpunit</echo>
+		<exec dir="C:\wamp\bin\php\php5.5.12" executable="phpunit.bat">
+		<arg value="--testdox"/>
+		<arg value="C:\ProgramData\Jenkins\.jenkins\workspace\MonPremierJob\tests\TestStack.php"/>
+		
+		<!-- <source>	
+			<include>
+				<directory></directory>
+				<file>TestStack.php</file>
+			</include>	
+		</source>	-->		
+		</exec> 
+	</target>
+
+    <!-- ============================================  -->
+    <!-- (DEFAULT)  Target: default                       -->
+    <!-- ============================================  -->
+    <target name="default" depends="phpunit">
+        <echo>Creating archive...</echo>
+        <echo>Results :</echo>
+    </target>
+</project>

@@ -21,11 +21,11 @@
 
 
 	<target name="phpunit" depends="build">
-	<property file="TestStack.php" />
+	<property file="TestStania.php" />
 		<echo>Rapports dans phpunit</echo>
 		<exec dir="C:\wamp\bin\php\php5.5.12" executable="phpunit.bat">
 		<arg value="--testdox"/>
-		<arg value="C:\ProgramData\Jenkins\.jenkins\workspace\MonPremierJob\tests\TestStack.php"/>
+		<arg value="C:\ProgramData\Jenkins\.jenkins\workspace\MonPremierJob\tests\TestStania.php"/>
 		
 		<!-- <source>	
 			<include>

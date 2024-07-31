@@ -8,7 +8,7 @@ class TestStania extends TestCase
     public function testPushAndPop()
     {
         $stack = [];
-		$number = new Telephone();
+		$number = new Telephone("+33 6 31 85 79 07");
         $this->assertEquals("+33 6 31 85 79 07", $number->getTelephone());
 
         array_push($stack, 'foo');

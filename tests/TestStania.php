@@ -3,7 +3,7 @@ use PHPUnit\Framework\TestCase;
 
 require_once 'C:\ProgramData\Jenkins\.jenkins\workspace\MonPremierJob\php\components\footer.php';
 
-class TestStack extends TestCase
+class TestStania extends TestCase
 {
     public function testPushAndPop()
     {
